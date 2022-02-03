@@ -1,9 +1,9 @@
 // 1.IMPORTACIONES 
 const express = require("express")
-const router = express.Router
+const router = express.Router()
 
 // 2. RUTEO 
-router.length("/", (req, res) => {
+router.get("/", (req, res) => {
     res.send("hola")
 })
 

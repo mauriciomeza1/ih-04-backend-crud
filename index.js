@@ -19,6 +19,7 @@ app.set("view engine", "hbs")
 // 3. RUTEO
 app.use("/", require("./routes/index"))
 app.use("/books", require("./routes/books"))
+app.use("/create", require("./views/books/create"))
 
 // 4. SERVIDOR
 app.listen(process.env.PORT, () => console.log(`Servidor activo en puerto ${process.env.PORT}`))

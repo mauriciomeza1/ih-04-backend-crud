@@ -6,6 +6,7 @@ const app = express()
 require("dotenv").config()
 
 // 3. RUTEO
+app.use("/", require("./routes/index"))
 
 // 4. SERVIDOR
 app.listen(process.env.PORT, () => console.log(`Servidor activo en puerto ${process.env.PORT}`))

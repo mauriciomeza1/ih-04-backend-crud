@@ -2,7 +2,7 @@
 const mongoose = require("mongoose")
 
 // 2.SCHEMA 
-const boookSchema = mongoose.Schema({
+const bookSchema = mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -22,7 +22,7 @@ const boookSchema = mongoose.Schema({
 })
 
 // 3. MODELO
-const Book = mongoose.model("Book", boookSchema)
+const Book = mongoose.model("Book", bookSchema)
 
 
 // 4.EXPORTACIÓN

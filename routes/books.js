@@ -18,4 +18,13 @@ router.post("/create", bookController.createBooksForm)
 // CREAR UNA PÁGINA INDIVIDUAL PARA CADA LIBRO CON LOS DATOS RESPECTIVOS
 router.get("/:bookID", bookController.getSingleBook)      //PARAMETRO
 
+// CREAR PÁGINA PARA EL FORMULARIO
+router.get("/:bookID/edit", bookController.editBook)
+
+// ENVIAR DATOS DE FORMULARIO PARA EDITAR LIBRO EN BD
+router.post("/:bookID/edit", bookController.editBookForm)
+
+// BORRAR LIBRO 
+router.post("/:bookID/delete", bookController.deleteBook)
+
 module.exports = router

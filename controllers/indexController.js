@@ -1,3 +1,3 @@
 exports.getHome = (req, res) => {
-        res.send("hola")
+        res.render("index")
 }

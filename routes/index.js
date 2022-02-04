@@ -4,7 +4,7 @@ const router = express.Router()
 const indexController = require("./../controllers/indexController")
 
 // 2. RUTEO 
-router.get("/")
+//router.get("/")
 router.get("/", indexController.getHome)
 
 // 3. EXPORTACION
